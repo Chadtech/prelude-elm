@@ -1,8 +1,6 @@
 # Prelude Elm
 
-My opinion is that the Haskell prelude is not that good. I think a lot of people agree. Fewer people would agree with me, that functions like `fmap` an typeclasses like `Functor` are not that good.
-
-I would like an Elm-like experience in Haskell, with tokens like `Maybe.map` and `Io.andThen`.
+My opinion is that the Haskell prelude is not that good. I think a lot of people agree. Fewer people- but still some- would agree with me, that functions like `fmap` and typeclasses like `Functor` are not that good. I would like an Elm-like experience in Haskell, with tokens like `Maybe.map` and `Io.andThen`.
 
 So I set out to remake `elm/core` in Haskell.
 
