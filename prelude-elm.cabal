@@ -1,0 +1,46 @@
+name:                prelude-elm
+version:             0.1.0.0
+synopsis:            An alternative Haskell Prelude, based off the core modules of the Elm programming language
+-- description:
+license:             BSD3
+license-file:        LICENSE
+author:              Chadtech
+maintainer:          chadtech0@gmail.com
+-- copyright:
+-- category:
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules: PreludeElm
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base >=4.11 && <4.12
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  default-extensions: 
+    BangPatterns
+    OverloadedStrings
+    NoImplicitPrelude
+
+test-suite spec
+  main-is:             Main.hs
+  ghc-options:
+    -W
+    -Wall
+  type:                exitcode-stdio-1.0
+  default-language:    Haskell2010
+  extensions: 
+    BangPatterns
+    OverloadedStrings
+    NoImplicitPrelude
+  hs-source-dirs:      
+    tests
+    src
+  other-modules:
+    PreludeElm
+    Int
+  build-depends: 
+    base >=4.11 && <4.12,
+    hspec >=2.7 && < 3
